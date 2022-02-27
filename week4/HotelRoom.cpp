@@ -1,6 +1,7 @@
-#include "HotelRoom.h"
 #include <iostream>
 #include <string>
+
+#include "HotelRoom.hpp"
 
 using namespace std;
 
@@ -14,7 +15,6 @@ HotelRoom::HotelRoom(int number, double rate){
         throw invalid_argument("Negative Parameter");
     this->number = number;
     this->rate = rate;
-    
 }
 
 void HotelRoom::setRate(double rate) {
@@ -31,9 +31,9 @@ void HotelRoom::setNumber(int number) {
     this->number = number;
 }
 
-inline int HotelRoom::getNumber() const { return number; }
-inline double HotelRoom::getRate() const { return rate; }
+int HotelRoom::getNumber() const { return number; }
+double HotelRoom::getRate() const { return rate; }
 
 string HotelRoom::toString() const {
-    return "Room: " + to_string(this->number) + "\nRate: $" + to_string(this-> rate) + "\n";
+    return "Room: " + to_string(this->getNumber()) + "\nRate: $" + to_string(this->getRate()) + "\n";
 };

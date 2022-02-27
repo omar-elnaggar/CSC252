@@ -43,24 +43,24 @@ int main(){
     while (userInput != "-1"){
         cout << "Enter the member ID to modify the balance (-1 to quit): ";
         cin >> userInput;
-    // (1a) Search for a member by MEMBER_ID [2pts]
-    member = binarySearch(memberId, userInput, memberId.size());
-        
-    /* (1b) If the search MEMBER_ID is found, then after (1a), the system displays the complete information
-     of this member on the screen. Then, the user can either subtract or add a particular number of points
-     (a integer) to update the current BALANCE of this member once. [5pts]
-     (1c) If the search MEMBER_ID is not found, then after (1a), the system displays the message
-     “Member not found.” [2pts] */
-     if (member >= 0){
-         cout << memberId[member] << " " << memberFirst[member] << " " << memberLast[member] << " " << memberPoints[member] << endl;
-         cout << "Add or subtract points (-10, 10): ";
-         cin >> points;
-         memberPoints[member] += points;
-     } else if (userInput != "-1") {
-         cout << "Member not found." << endl;
-     } else {
-         cout << "Updating records..." << endl;
-     }
+        // (1a) Search for a member by MEMBER_ID [2pts]
+        member = binarySearch(memberId, userInput, memberId.size());
+            
+        /* (1b) If the search MEMBER_ID is found, then after (1a), the system displays the complete information
+        of this member on the screen. Then, the user can either subtract or add a particular number of points
+        (a integer) to update the current BALANCE of this member once. [5pts]
+        (1c) If the search MEMBER_ID is not found, then after (1a), the system displays the message
+        “Member not found.” [2pts] */
+        if (member >= 0){
+            cout << memberId[member] << " " << memberFirst[member] << " " << memberLast[member] << " " << memberPoints[member] << endl;
+            cout << "Add or subtract points (-10, 10): ";
+            cin >> points;
+            memberPoints[member] += points;
+        } else if (userInput != "-1") {
+            cout << "Member not found." << endl;
+        } else {
+            cout << "Updating records..." << endl;
+        }
 
     }
 

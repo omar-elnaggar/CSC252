@@ -1,7 +1,7 @@
-#include "GuestRoom.h"
+#include "GuestRoom.hpp"
 
 // d.	Add constructors and get/set functions to the GuestRoom class.
-GuestRoom::GuestRoom() : HotelRoom(1, 0.0){
+GuestRoom::GuestRoom() : HotelRoom(){
     capacity = 0;
     status = 0;
     days = 0;
@@ -47,5 +47,5 @@ string GuestRoom::toString() const {
      + "\nCapacity: " + to_string(this->getCapacity()) 
      + "\nStatus: " + to_string(this->getStatus())
      + "\nDays: " + to_string(this->getDays())
-     + "\nBill: " + to_string(this->calculateBill());
+     + "\nBill: $" + to_string(this->calculateBill());
 }
