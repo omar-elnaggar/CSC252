@@ -35,5 +35,14 @@ int HotelRoom::getNumber() const { return number; }
 double HotelRoom::getRate() const { return rate; }
 
 string HotelRoom::toString() const {
-    return "Room: " + to_string(this->getNumber()) + "\nRate: $" + to_string(this->getRate()) + "\n";
+    return "Room: " + to_string(this->getNumber()) + "\nRate: $" + to_string(this->getRate());
 };
+
+// Add a virtual function calculateBill() that returns 0.00
+double HotelRoom::calculateBill() const { return 0.00; }
+
+ // Write the function displayHotelRoom() that receive a base class type reference as a parameter, then invokes the functions calculateBill() and toString().
+//  The function must return void. [10pts]
+void HotelRoom::displayHotelRoom(HotelRoom* hotelRoom){
+    cout << hotelRoom->toString() << endl << "Bill: $" << to_string(hotelRoom->calculateBill()) << endl;
+}

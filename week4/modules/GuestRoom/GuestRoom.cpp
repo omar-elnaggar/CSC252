@@ -46,6 +46,5 @@ string GuestRoom::toString() const {
      + "\nRate: $" + to_string(this->getRate()) 
      + "\nCapacity: " + to_string(this->getCapacity()) 
      + "\nStatus: " + to_string(this->getStatus())
-     + "\nDays: " + to_string(this->getDays())
-     + "\nBill: $" + to_string(this->calculateBill());
+     + "\nDays: " + to_string(this->getDays());
 }

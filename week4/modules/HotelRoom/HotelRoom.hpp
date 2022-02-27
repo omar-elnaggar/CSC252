@@ -21,10 +21,10 @@ class HotelRoom {
         // e.	Make changes to the HotelRoom class to implement polymorphism.
         // Add a virtual function calculateBill() that returns 0.00 and make the toString() function in the HotelRoom class a virtual function.
         virtual std::string toString() const;
-        //virtual double calculateBill() const;
+        virtual double calculateBill() const;
         // Write the function displayHotelRoom() that receive a base class type reference as a parameter, then invokes the functions calculateBill() and toString().
         //  The function must return void. [10pts]
-
+        void displayHotelRoom(HotelRoom* hotelRoom);
 
 };
 

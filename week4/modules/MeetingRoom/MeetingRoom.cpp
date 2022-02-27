@@ -31,8 +31,7 @@ string MeetingRoom::toString() const{
     return "Room Number: " + to_string(this->getNumber())
      + "\nRate: $" + to_string(this->getRate()) 
      + "\nSeats: " + to_string(this->getSeats())
-     + "\nStatus: " + sstatus
-     + "\nBill: $" + to_string(this->calculateBill());
+     + "\nStatus: " + sstatus;
 }
 
 
