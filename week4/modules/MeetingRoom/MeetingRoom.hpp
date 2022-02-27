@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "HotelRoom.hpp"
+#include "..\HotelRoom\HotelRoom.hpp"
 
 // c.	Derive the classes MeetingRoom form the base class HotelRoom. The class has the following private data filed sand public functions:
 class MeetingRoom : public HotelRoom {

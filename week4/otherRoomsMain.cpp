@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 
-#include "MeetingRoom.hpp"
-#include "GuestRoom.hpp"
+#include ".\modules\MeetingRoom\MeetingRoom.hpp"
+#include ".\modules\GuestRoom\GuestRoom.hpp"
 
 using namespace std;
 

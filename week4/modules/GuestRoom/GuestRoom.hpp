@@ -1,6 +1,6 @@
 #ifndef GUESTROOM_HPP
 #define GUESTROOM_HPP
-#include "HotelRoom.hpp"
+#include "..\MeetingRoom\MeetingRoom.hpp"
 #include <iostream>
 #include <string>
 
