@@ -27,7 +27,7 @@ void MeetingRoom::setStatus(int status){
 
 // d.	 Redefine the function toSting()  to format and return a string containing all pertinent information about the MeetingRoom. [4pts]
 string MeetingRoom::toString() const{
-    string sstatus = getStatus() == 1 ? "Open" : "Reserved";
+    string sstatus = getStatus() == 0 ? "Unoccupied" : "Occupied";
     return "Room Number: " + to_string(this->getNumber())
      + "\nRate: $" + to_string(this->getRate()) 
      + "\nSeats: " + to_string(this->getSeats())

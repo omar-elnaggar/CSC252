@@ -13,11 +13,13 @@ int main(){
 
     cout << "Meeting Room" << endl;
     cout << meetingRoom.toString() << endl;
+    cout << "Bill: $" << meetingRoom.calculateBill() << endl;
 
     cout << "================================" << endl;
 
     cout << "Guest Room" << endl;
     cout << guestRoom.toString() << endl;
+    cout << "Bill: $" << guestRoom.calculateBill() << endl;
 
     return 0;
 }

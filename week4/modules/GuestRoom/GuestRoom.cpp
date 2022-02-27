@@ -42,9 +42,10 @@ double GuestRoom::calculateBill() const {
 
 // Redefine the function toString() that formats and returns a string containing all pertinent information about the GuestRoom. [3pts]
 string GuestRoom::toString() const {
+    string sstatus = getStatus() == 0 ? "Unoccupied" : "Occupied";
     return "Room Number: " + to_string(this->getNumber())
      + "\nRate: $" + to_string(this->getRate()) 
      + "\nCapacity: " + to_string(this->getCapacity()) 
-     + "\nStatus: " + to_string(this->getStatus())
+     + "\nStatus: " + sstatus
      + "\nDays: " + to_string(this->getDays());
 }
