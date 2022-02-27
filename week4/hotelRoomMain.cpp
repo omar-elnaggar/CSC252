@@ -1,18 +1,20 @@
-#include <iostream>
-#include "HotelRoom.cpp"
+// HOTEL ROOM ABSTRACTED
 
-using namespace std;
+// #include <iostream>
+// #include "HotelRoom.cpp"
 
-int main(){
-    HotelRoom room;
+// using namespace std;
 
-    try {
-        room.setRate(-200.0);
-    } catch(invalid_argument& ex){
-        cout << ex.what() << endl;
-    }
+// int main(){
+//     HotelRoom room;
 
-    cout << room.toString();
+//     try {
+//         room.setRate(-200.0);
+//     } catch(invalid_argument& ex){
+//         cout << ex.what() << endl;
+//     }
 
-    return 0;
-}
+//     cout << room.toString();
+
+//     return 0;
+// }
